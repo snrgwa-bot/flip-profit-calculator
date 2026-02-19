@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flip Profit Calculator - Track Every Flip From Receipt to Profit</title>
+  <meta name="description" content="The all-in-one profit tracking app for resellers. AI receipt scanning, real-time eBay fees, inventory management, and smart reports. Available on iOS.">
+  <meta name="keywords" content="profit calculator, reseller app, eBay fee calculator, inventory tracker, flip profit, reselling, Poshmark, Mercari">
+  <meta name="author" content="Dumitru Bumbu">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://snrgwa-bot.github.io/flip-profit-calculator/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Flip Profit Calculator - Track Every Flip">
+  <meta property="og:description" content="The all-in-one profit tracking app for resellers. AI receipt scanning, real-time marketplace fees, and smart reports.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://snrgwa-bot.github.io/flip-profit-calculator/">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Flip Profit Calculator">
+  <meta name="twitter:description" content="Track every flip from receipt to profit. AI receipt scanning & real-time fee calculation.">
+
+  <link rel="stylesheet" href="assets/style.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Flip Profit Calculator",
+    "operatingSystem": "iOS",
+    "applicationCategory": "BusinessApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "The all-in-one profit tracking app for resellers. AI receipt scanning, real-time marketplace fees, inventory management, and smart reports.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "ratingCount": "1"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#d4a843"/><text x="16" y="22" text-anchor="middle" font-size="18" font-weight="bold" fill="#000">$</text></svg>
+        Flip Profit
+      </a>
+      <button class="nav-toggle" onclick="document.getElementById('nav').classList.toggle('open')" aria-label="Toggle menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+      <div class="nav-cta-wrap">
+        <a href="https://apps.apple.com/app/id6758547776" class="nav-cta">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83"/><path d="M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg>
+          Download
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">7-Day Free Trial</div>
+    <h1>Track Every Flip<br>From <span>Receipt</span> to <span>Profit</span></h1>
+    <p>The all-in-one profit tracking app built for resellers. AI receipt scanning, real-time marketplace fees, and smart reports.</p>
+    <div class="hero-buttons">
+      <a href="https://apps.apple.com/app/id6758547776" class="btn-primary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83"/><path d="M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg>
+        Download on the App Store
+      </a>
+      <a href="#features" class="btn-secondary">Learn More</a>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="section-label">Features</div>
+    <h2 class="section-title">Everything You Need to Flip Smarter</h2>
+    <p class="section-subtitle">Built by resellers, for resellers. Every feature designed to save you time and maximize profit.</p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">&#128247;</div>
+        <h3>AI Receipt Scanning</h3>
+        <p>Snap a photo of any receipt and AI extracts every item, price, and tax automatically. Add items to inventory with one tap.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#128200;</div>
+        <h3>Real-Time Profit Calculator</h3>
+        <p>Enter your sale price and instantly see true profit after all fees. Supports eBay, Poshmark, Mercari, Facebook Marketplace, and more.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#128230;</div>
+        <h3>Full Inventory Tracking</h3>
+        <p>Track every item from purchase to sale. Status tracking, bulk splits, kit creation, photos, notes, and custom SKUs.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#128176;</div>
+        <h3>Auto Marketplace Fees</h3>
+        <p>Select your marketplace and fees are calculated automatically. No more guessing what eBay or Poshmark will take from your sale.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#128202;</div>
+        <h3>Detailed Reports</h3>
+        <p>See total sales, profit, ROI, and averages at a glance. Filter by week, month, quarter, or year. Know exactly where you stand.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#9729;&#65039;</div>
+        <h3>iCloud Backup & Sync</h3>
+        <p>Your data is automatically backed up to iCloud. Restore anytime on any device. Never lose your inventory records.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="section-label">Pricing</div>
+    <h2 class="section-title">Start Free, Upgrade When Ready</h2>
+    <p class="section-subtitle">Try every feature free for 7 days. No credit card required to start.</p>
+
+    <div class="pricing-cards">
+      <div class="price-card">
+        <h3>Monthly</h3>
+        <div class="price-amount">$4.99<span>/mo</span></div>
+        <div class="price-period">Billed monthly</div>
+        <ul>
+          <li>Unlimited inventory items</li>
+          <li>AI receipt scanning</li>
+          <li>All marketplace fee calculators</li>
+          <li>Full profit reports</li>
+          <li>iCloud backup & sync</li>
+        </ul>
+        <a href="https://apps.apple.com/app/id6758547776" class="btn-primary" style="width:100%;justify-content:center;">Start Free Trial</a>
+      </div>
+      <div class="price-card highlighted">
+        <div class="price-badge">Save 33%</div>
+        <h3>Annual</h3>
+        <div class="price-amount">$39.99<span>/yr</span></div>
+        <div class="price-period">Billed annually ($3.33/mo)</div>
+        <ul>
+          <li>Unlimited inventory items</li>
+          <li>AI receipt scanning</li>
+          <li>All marketplace fee calculators</li>
+          <li>Full profit reports</li>
+          <li>iCloud backup & sync</li>
+        </ul>
+        <a href="https://apps.apple.com/app/id6758547776" class="btn-primary" style="width:100%;justify-content:center;">Start Free Trial</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-box">
+      <h2>Ready to Track Your True Profit?</h2>
+      <p>Join thousands of resellers who know exactly how much they make on every flip.</p>
+      <a href="https://apps.apple.com/app/id6758547776" class="btn-primary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83"/><path d="M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg>
+        Download Free on the App Store
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-copy">&copy; 2026 Dumitru Bumbu. All rights reserved.</div>
+      <ul class="footer-links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
