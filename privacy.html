@@ -70,14 +70,25 @@
     <p>All inventory data is stored locally on your device and, if enabled, synced to your personal iCloud account via Apple CloudKit. We do not have access to your iCloud data. Your data remains under your control at all times.</p>
 
     <h2>4. AI Receipt Scanning</h2>
-    <p>When you use the AI receipt scanning feature, your receipt image is sent to Google Gemini API for text extraction. The image is processed in real time and is not stored on Google's servers beyond the processing request. No personally identifiable information is sent with the request.</p>
+    <p>When you use the AI receipt scanning feature, the app first performs optical character recognition (OCR) <strong>on your device</strong> using Apple Vision to extract text from your receipt photos. Your receipt photos are never sent to any external server.</p>
+    <p>The extracted text is then sent to <strong>Google Gemini AI</strong> (operated by Google LLC) for structured data parsing. This text may include the following personal data:</p>
+    <ul>
+      <li>Store name and location</li>
+      <li>Item names and prices</li>
+      <li>Purchase date and totals</li>
+      <li>Payment card last digits (if visible on the receipt)</li>
+      <li>Receipt number</li>
+    </ul>
+    <p><strong>Consent required:</strong> The app asks for your explicit permission before sending any data to Google Gemini AI. You must tap "Allow AI Processing" before any receipt text is shared. You can revoke this permission at any time in the app's Settings under "AI Data Processing."</p>
+    <p><strong>Data retention:</strong> Receipt text is sent to Google Gemini AI solely for real-time processing. It is not stored by Google beyond the duration of the API request. Google's use of this data is governed by the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and the <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Terms of Service</a>.</p>
 
     <h2>5. Third-Party Services</h2>
+    <p>The app uses the following third-party services. Each provider's privacy policy governs how they handle data shared with their service:</p>
     <ul>
       <li><strong>Apple StoreKit</strong> &mdash; handles subscriptions and payments. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</li>
       <li><strong>Apple CloudKit (iCloud)</strong> &mdash; syncs your data across your devices. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</li>
-      <li><strong>Google Gemini API</strong> &mdash; processes receipt images for text extraction. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
-      <li><strong>eBay Browse API</strong> &mdash; used for marketplace fee information. No personal data is sent. See <a href="https://www.ebay.com/help/policies/member-behaviour-policies/user-privacy-notice-privacy-policy?id=4260" target="_blank" rel="noopener">eBay's Privacy Policy</a>.</li>
+      <li><strong>Google Gemini AI</strong> &mdash; processes receipt OCR text (not images) for structured data extraction. Explicit user consent is required before any data is sent. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+      <li><strong>eBay Finding API</strong> &mdash; used for marketplace price research. Only search keywords are sent; no personal data is shared. See <a href="https://www.ebay.com/help/policies/member-behaviour-policies/user-privacy-notice-privacy-policy?id=4260" target="_blank" rel="noopener">eBay's Privacy Policy</a>.</li>
     </ul>
 
     <h2>6. Children's Privacy</h2>
