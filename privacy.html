@@ -39,7 +39,7 @@
   <!-- CONTENT -->
   <main class="legal">
     <h1>Privacy Policy</h1>
-    <p class="legal-date">Effective Date: October 21, 2026</p>
+    <p class="legal-date">Effective Date: October 26, 2026</p>
 
     <p>Flip Profit Calculator ("we", "our", or "the app") is developed by Essential Dev Team. Your privacy is important to us. This Privacy Policy explains what data we collect, how we use it, and your rights.</p>
 
@@ -55,6 +55,7 @@
     <ul>
       <li><strong>Subscription status</strong> &mdash; managed entirely by Apple through StoreKit. We do not collect or store payment information.</li>
       <li><strong>Crash logs &amp; diagnostics</strong> &mdash; Apple may collect anonymous crash data if you have opted in via your device settings.</li>
+      <li><strong>Anonymous usage statistics</strong> &mdash; on by default, and you can turn them off in Settings &rsaquo; Privacy. See <a href="#usage">section 5</a> for exactly what is and isn't sent.</li>
       <li><strong>Anonymous service session (AI receipt scanning only)</strong> &mdash; the first time you use AI receipt scanning, the app creates an anonymous session on our server so we can apply fair-use limits. It contains a random identifier that is not linked to your name, Apple ID or device. For each scan we count requests per hour and per day, and we keep a one-way, salted hash of your IP address (never the IP address itself) to stop abuse. These counters are deleted automatically after one to two days.</li>
     </ul>
 
@@ -62,7 +63,7 @@
     <ul>
       <li>We do not collect your name, email address, or phone number.</li>
       <li>We do not collect location data.</li>
-      <li>We do not use analytics or tracking SDKs.</li>
+      <li>We do not use third-party analytics, advertising or tracking SDKs. Our own anonymous usage statistics are described in <a href="#usage">section 5</a>.</li>
       <li>We do not serve advertisements.</li>
       <li>We do not share or sell any data to third parties.</li>
     </ul>
@@ -83,26 +84,32 @@
     <p><strong>Consent required:</strong> The app asks for your explicit permission before sending any data to Google Gemini AI. You must tap "Allow AI Processing" before any receipt text is shared. You can revoke this permission at any time in the app's Settings under "AI Data Processing."</p>
     <p><strong>Data retention:</strong> We do not keep receipt text after the scan finishes; the parsed result is saved only in the app on your device. Google processes the text to return the result and may keep API requests for a limited time to detect abuse, as described in its terms. Google's use of this data is governed by the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and the <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Terms of Service</a>.</p>
 
-    <h2>5. Third-Party Services</h2>
+    <h2 id="usage">5. Anonymous Usage Statistics</h2>
+    <p>To learn which features help people and where the app goes wrong, the app sends anonymous usage statistics to our own server (hosted by Supabase). This is on by default and you can turn it off at any time in <strong>Settings &rsaquo; Privacy &rsaquo; Share Usage Data</strong>; turning it off stops collection and deletes anything not yet sent.</p>
+    <p><strong>What is sent:</strong> a random installation ID created for this app (it is deleted with the app); device model, iOS and app version; language, region and time zone; accessibility settings (such as larger text or reduced motion); when sessions start and end and the last screen viewed; the app's own events (for example that a profit calculation was completed with the eBay or eBay Store fee table and how many items it covered, that an inventory item was added, or that a receipt was scanned and how many pages it had &mdash; never the amounts); paywall views and taps; subscription start, trial, renewal status, cancellation and refund events; whether the app asked for a review; and Apple's anonymous crash and performance reports (MetricKit).</p>
+    <p><strong>What is never sent:</strong> your name, email, phone or address; your location; the advertising identifier (IDFA) or the identifier for vendors (IDFV); prices you paid, receipts or transaction IDs; and anything you enter or create &mdash; no item name, SKU, price, cost, fee, profit, note, photo, receipt content or search text. Your IP address is not stored or used. Statistics are not linked to your identity and are not used for tracking or advertising.</p>
+    <p><strong>Retention:</strong> usage statistics are kept for 13 months, crash and performance reports for 6 months. <strong>Deletion:</strong> email us the Installation ID shown in Settings &rsaquo; Privacy and we will delete everything recorded for it.</p>
+
+    <h2>6. Third-Party Services</h2>
     <p>The app uses the following third-party services. Each provider's privacy policy governs how they handle data shared with their service:</p>
     <ul>
       <li><strong>Apple StoreKit</strong> &mdash; handles subscriptions and payments. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</li>
       <li><strong>Apple CloudKit (iCloud)</strong> &mdash; syncs your data across your devices. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</li>
       <li><strong>Google Gemini AI</strong> &mdash; processes receipt OCR text (not images) for structured data extraction. Explicit user consent is required before any data is sent. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
-      <li><strong>Supabase</strong> &mdash; hosts the server that relays receipt text to Google Gemini AI and keeps the anonymous fair-use counters described above. See <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase's Privacy Policy</a>.</li>
+      <li><strong>Supabase</strong> &mdash; hosts the server that relays receipt text to Google Gemini AI and keeps the anonymous fair-use counters described above, and stores the anonymous usage statistics described in section 5. See <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase's Privacy Policy</a>.</li>
     </ul>
     <p>Earlier versions of the app could send search keywords to eBay for price research. That feature has been removed, and the app no longer contacts eBay.</p>
 
-    <h2>6. Children's Privacy</h2>
+    <h2>7. Children's Privacy</h2>
     <p>Flip Profit Calculator is not directed at children under 13. We do not knowingly collect data from children.</p>
 
-    <h2>7. Your Rights</h2>
-    <p>Since all data is stored locally on your device and in your personal iCloud account, you have full control. You can delete all app data at any time in the app (Settings &rarr; Clear All Data) or by deleting the app. The anonymous fair-use counters on our server are deleted automatically after one to two days; you can also email us and we will delete them sooner.</p>
+    <h2>8. Your Rights</h2>
+    <p>Since all data is stored locally on your device and in your personal iCloud account, you have full control. You can delete all app data at any time in the app (Settings &rarr; Clear All Data) or by deleting the app. The anonymous fair-use counters on our server are deleted automatically after one to two days; you can also email us and we will delete them sooner. You can turn anonymous usage statistics off at any time in Settings &rsaquo; Privacy, and email us your Installation ID (shown there) to have the statistics already recorded for it deleted.</p>
 
-    <h2>8. Changes to This Policy</h2>
+    <h2>9. Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated effective date.</p>
 
-    <h2>9. Contact Us</h2>
+    <h2>10. Contact Us</h2>
     <p>If you have any questions about this Privacy Policy, please contact us at:</p>
     <p><a href="mailto:essentialdevteam@gmail.com">essentialdevteam@gmail.com</a></p>
   </main>
