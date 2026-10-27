@@ -49,6 +49,7 @@
     <ul>
       <li><strong>Inventory data</strong> &mdash; item names, purchase prices, sale prices, fees, notes, and photos you add to the app.</li>
       <li><strong>Receipt photos</strong> &mdash; photos you take or pick for a receipt. They stay on your device (and in your iCloud, if enabled). Receipt photos are never uploaded to us or to anyone else.</li>
+      <li><strong>Receipt text (AI receipt scanning only)</strong> &mdash; when you choose to scan a receipt, the text read from it on your device (not the image) is sent through our server to Google Gemini so the receipt can be read into items, prices and totals. See <a href="#ai-scanning">section 4</a>.</li>
     </ul>
 
     <h3>Data Collected Automatically</h3>
@@ -71,7 +72,7 @@
     <h2>3. How Your Data Is Stored</h2>
     <p>All inventory data is stored locally on your device and, if enabled, synced to your personal iCloud account via Apple CloudKit. We do not have access to your iCloud data. Your data remains under your control at all times.</p>
 
-    <h2>4. AI Receipt Scanning</h2>
+    <h2 id="ai-scanning">4. AI Receipt Scanning</h2>
     <p>When you use the AI receipt scanning feature, the app first performs optical character recognition (OCR) <strong>on your device</strong> using Apple Vision to extract text from your receipt photos. Your receipt photos are never sent to any external server.</p>
     <p>The extracted text is then sent through our server (hosted by Supabase) to <strong>Google Gemini AI</strong> (operated by Google LLC) for structured data parsing. Our server only passes the text on and checks the result; it does not store your receipt text. This text may include the following personal data:</p>
     <ul>
@@ -100,16 +101,20 @@
     </ul>
     <p>Earlier versions of the app could send search keywords to eBay for price research. That feature has been removed, and the app no longer contacts eBay.</p>
 
-    <h2>7. Children's Privacy</h2>
+    <h2 id="refunds">7. Purchases and Refund Requests</h2>
+    <p>Subscriptions are processed by Apple through the App Store. We never see or receive your payment details.</p>
+    <p><strong>Refund requests.</strong> When someone asks Apple for a refund, Apple may ask us about the purchase. By subscribing, you agree that we may then tell Apple that the purchase was delivered, that a free version or trial was available beforehand, and that we prefer a refund of the unused part. We share nothing else, and only for purchases made after this consent appeared on the subscription screen. We are also notified when a refund is requested or granted, without learning who you are.</p>
+
+    <h2>8. Children's Privacy</h2>
     <p>Flip Profit Calculator is not directed at children under 13. We do not knowingly collect data from children.</p>
 
-    <h2>8. Your Rights</h2>
+    <h2>9. Your Rights</h2>
     <p>Since all data is stored locally on your device and in your personal iCloud account, you have full control. You can delete all app data at any time in the app (Settings &rarr; Clear All Data) or by deleting the app. The anonymous fair-use counters on our server are deleted automatically after one to two days; you can also email us and we will delete them sooner. You can turn anonymous usage statistics off at any time in Settings &rsaquo; Privacy, and email us your Installation ID (shown there) to have the statistics already recorded for it deleted.</p>
 
-    <h2>9. Changes to This Policy</h2>
+    <h2>10. Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated effective date.</p>
 
-    <h2>10. Contact Us</h2>
+    <h2>11. Contact Us</h2>
     <p>If you have any questions about this Privacy Policy, please contact us at:</p>
     <p><a href="mailto:essentialdevteam@gmail.com">essentialdevteam@gmail.com</a></p>
   </main>
